@@ -1,2 +1,1 @@
-#define N 50
-#define M 5
+#define N 100
