@@ -1,1 +1,1 @@
-#define N 52
+#define N 100
