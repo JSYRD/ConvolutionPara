@@ -1,0 +1,205 @@
+N = 10
+serial time:0.0597544
+parallel time:0.0335168
+boost ratio:1.7828193622302846
+
+N = 11
+serial time:0.0810648
+parallel time:0.034390199999999996
+boost ratio:2.357206413454996
+
+N = 12
+serial time:0.1063556
+parallel time:0.0395568
+boost ratio:2.688680580835659
+
+N = 13
+serial time:0.1345458
+parallel time:0.0483208
+boost ratio:2.7844282379430805
+
+N = 14
+serial time:0.1647254
+parallel time:0.0567796
+boost ratio:2.9011370280875526
+
+N = 15
+serial time:0.1995322
+parallel time:0.0606514
+boost ratio:3.289820185519213
+
+N = 16
+serial time:0.237576
+parallel time:0.060548000000000005
+boost ratio:3.923762964920394
+
+N = 17
+serial time:0.2791644
+parallel time:0.0720562
+boost ratio:3.8742592587452567
+
+N = 18
+serial time:0.3255996
+parallel time:0.0600478
+boost ratio:5.422340202305497
+
+N = 19
+serial time:0.3729244
+parallel time:0.06688039999999999
+boost ratio:5.5759893780539596
+
+N = 20
+serial time:0.423147
+parallel time:0.0688012
+boost ratio:6.150285169444718
+
+N = 21
+serial time:0.483674
+parallel time:0.1269246
+boost ratio:3.8107191198554102
+
+N = 22
+serial time:0.5440538
+parallel time:0.1353822
+boost ratio:4.018650900930846
+
+N = 23
+serial time:0.5969386
+parallel time:0.146492
+boost ratio:4.074888731125249
+
+N = 24
+serial time:0.6643336
+parallel time:0.18674960000000002
+boost ratio:3.5573495204273526
+
+N = 25
+serial time:0.773127
+parallel time:0.1978064
+boost ratio:3.9085034660152553
+
+N = 26
+serial time:0.8090870000000001
+parallel time:0.18392559999999997
+boost ratio:4.398990678839706
+
+N = 27
+serial time:0.9251272
+parallel time:0.18761440000000001
+boost ratio:4.931003163936244
+
+N = 28
+serial time:0.9559026000000002
+parallel time:0.187512
+boost ratio:5.097820939459875
+
+N = 29
+serial time:1.0364834
+parallel time:0.214132
+boost ratio:4.840394709805167
+
+N = 30
+serial time:1.1305517999999999
+parallel time:0.21307299999999998
+boost ratio:5.305936463090115
+
+N = 31
+serial time:1.1997503999999999
+parallel time:0.2205238
+boost ratio:5.44045767395628
+
+N = 32
+serial time:1.2971616000000001
+parallel time:0.2186762
+boost ratio:5.931882847790479
+
+N = 33
+serial time:1.3835167999999998
+parallel time:0.236941
+boost ratio:5.839077238637466
+
+N = 34
+serial time:1.493942
+parallel time:0.29340679999999997
+boost ratio:5.091708849283657
+
+N = 35
+serial time:1.5881496
+parallel time:0.2631264
+boost ratio:6.035690831478711
+
+N = 36
+serial time:1.6807898000000001
+parallel time:0.26581780000000005
+boost ratio:6.323089725368278
+
+N = 37
+serial time:1.7982479999999998
+parallel time:0.3713842
+boost ratio:4.842015357680806
+
+N = 38
+serial time:1.9145124
+parallel time:0.39058240000000005
+boost ratio:4.901686302301383
+
+N = 39
+serial time:2.0352436
+parallel time:0.3968804
+boost ratio:5.128103075888856
+
+N = 40
+serial time:2.1334124
+parallel time:0.4699822
+boost ratio:4.539347234852724
+
+N = 41
+serial time:2.2588832000000005
+parallel time:0.429439
+boost ratio:5.260079312777834
+
+N = 42
+serial time:2.3966788
+parallel time:0.46008839999999995
+boost ratio:5.209170237719535
+
+N = 43
+serial time:2.5696152
+parallel time:0.49208480000000004
+boost ratio:5.221895088001092
+
+N = 44
+serial time:2.660746
+parallel time:0.5396112
+boost ratio:4.930857624897334
+
+N = 45
+serial time:2.8470190000000004
+parallel time:1.0223756
+boost ratio:2.7847094551161047
+
+N = 46
+serial time:2.9719558000000004
+parallel time:1.2204074
+boost ratio:2.4352161417572527
+
+N = 47
+serial time:3.1489816
+parallel time:1.028669
+boost ratio:3.0612194982059338
+
+N = 48
+serial time:3.2526181999999997
+parallel time:1.073796
+boost ratio:3.0290839228307798
+
+N = 49
+serial time:3.424436
+parallel time:1.0983612
+boost ratio:3.1177685446281242
+
+N = 50
+serial time:3.7635564
+parallel time:1.2657174000000002
+boost ratio:2.9734571081980854
+
