@@ -110,13 +110,10 @@ int matrix[MAXN][MAXN] = {{139, 13, 92, 251, 137, 124, 233, 91, 75, 11, 188, 184
                           {251, 58, 46, 166, 235, 78, 68, 211, 123, 219, 100, 25, 202, 247, 70, 135, 244, 80, 1, 56, 112, 233, 159, 30, 250, 0, 243, 84, 6, 29, 177, 128, 169, 53, 102, 201, 81, 60, 47, 238, 154, 93, 213, 42, 57, 74, 110, 150, 72, 127, 214, 18, 186, 126, 228, 167, 103, 172, 104, 185, 226, 17, 20, 158, 241, 39, 26, 132, 22, 33, 83, 217, 51, 161, 97, 200, 253, 249, 16, 59, 76, 120, 43, 64, 119, 31, 73, 140, 178, 108, 225, 2, 98, 156, 130, 106, 163, 152, 195, 63},
                           {249, 179, 23, 144, 213, 28, 75, 96, 199, 115, 237, 125, 222, 124, 47, 247, 151, 205, 3, 181, 57, 111, 29, 13, 202, 54, 58, 15, 189, 128, 70, 161, 183, 168, 79, 221, 80, 10, 193, 63, 240, 162, 16, 83, 157, 219, 250, 173, 12, 244, 56, 116, 198, 102, 39, 30, 196, 223, 17, 89, 236, 42, 214, 188, 172, 32, 245, 169, 105, 5, 49, 50, 206, 81, 9, 37, 166, 220, 2, 180, 94, 137, 216, 176, 141, 227, 229, 22, 153, 100, 203, 31, 36, 149, 84, 52, 194, 19, 159, 104}};
 
-// int core[M][M] = {
-// { 0, 1, 0 },
-//   { 1, -4, 1 },
-//   { 0, 1, 0 }
-// };
-
-int core[M * M] = {0, 1, 0, 1, -4, 1, 0, 1, 0};
+int core[M][M] = {
+    {0, 1, 0},
+    {1, -4, 1},
+    {0, 1, 0}};
 
 void printMatrix(size_t n, int **m)
 {
@@ -137,7 +134,7 @@ int conv(size_t x, size_t y)
     {
         for (size_t j = 0; j < M; ++j)
         {
-            sum += matrix[y + i][x + j] * core[i * 3 + j];
+            sum += matrix[y + i][x + j] * core[i][j];
         }
     }
     return sum;
@@ -145,10 +142,8 @@ int conv(size_t x, size_t y)
 
 int main(int argc, char **argv)
 {
-    register int sum = 0;
-    register size_t i, j,cur_y, cur_x;
+    register size_t i, cur_y, cur_x;
     struct timeval start, end;
-    size_t batch_size, matrix_num, core_num;
     assert(N <= MAXN);
     int dim = N - M + 1;
     int **outputMatrix = (int **)malloc(sizeof(int *) * dim);
@@ -158,26 +153,13 @@ int main(int argc, char **argv)
         memset(outputMatrix[i], 0, sizeof(int) * dim);
     } // init outputMatrix
     gettimeofday(&start, NULL);
-    for (batch_size = 0; batch_size < BATCH_SIZE; ++batch_size)
+    for (int times = 0; times < TIMESUP; ++times)
     {
-        for (matrix_num = 0; matrix_num < MATRIX_NUM; ++matrix_num)
+        for (cur_y = 0; cur_y < dim; ++cur_y)
         {
-            for (cur_y = 0; cur_y <= N - M; ++cur_y)
+            for (cur_x = 0; cur_x < dim; ++cur_x)
             {
-                for (cur_x = 0; cur_x <= N - M; ++cur_x)
-                {
-                    for (core_num = 0; core_num < CORE_NUM; ++core_num)
-                    {
-                        for (i = 0; i < M; ++i)
-                        {
-                            for (j = 0; j < M; ++j)
-                            {
-                                sum += matrix[cur_y + i][cur_x + j] * core[i * 3 + j];
-                            }
-                        }
-                        outputMatrix[cur_y][cur_x] = sum;
-                    }
-                }
+                outputMatrix[cur_y][cur_x] = conv(cur_x, cur_y);
             }
         }
     }

@@ -132,7 +132,6 @@ int main(int argc, char **argv)
 {
     int thread_count = strtol(argv[1], NULL, 10);
     struct timeval start, end;
-    size_t batch_size, matrix_num;
     assert(N <= MAXN);
     int dim = N - M + 1;
     int **outputMatrix = (int **)malloc(sizeof(int *) * dim);
@@ -142,19 +141,15 @@ int main(int argc, char **argv)
         memset(outputMatrix[i], 0, sizeof(int) * dim);
     } // init outputMatrix
     gettimeofday(&start, NULL);
-    for (batch_size = 0; batch_size < BATCH_SIZE; ++batch_size)
+    for (int times = 0; times < TIMESUP; ++times)
     {
-        for (matrix_num = 0; matrix_num < MATRIX_NUM; ++matrix_num)
-        {
 #pragma omp parallel for num_threads(thread_count)
             for (register size_t cur_y = 0; cur_y <= N - M; ++cur_y)
             {
-				register size_t cur_x, core_num, i, j;
+				register size_t cur_x, i, j;
 				register int sum;
                 for (cur_x = 0; cur_x <= N - M; ++cur_x)
                 {
-                    for (core_num = 0; core_num < CORE_NUM; ++core_num)
-                    {
 						sum = 0;
                         for (i = 0; i < M; ++i)
                         {
@@ -164,10 +159,8 @@ int main(int argc, char **argv)
                             }
                         }
                         outputMatrix[cur_y][cur_x] = sum;
-                    }
                 }
             }
-        }
     }
 
     gettimeofday(&end, NULL);
