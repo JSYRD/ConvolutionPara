@@ -1,5 +1,6 @@
 # ConvolutionPara.
 Parallel Computing Final Project: Convolution Speedup.
+> 使用echarts 完成图表绘制
 
 # OpenMP测试
 
