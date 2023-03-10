@@ -1,0 +1,2 @@
+#define I_SIZE 200
+#define BATCHSIZE 10000
