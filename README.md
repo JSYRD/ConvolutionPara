@@ -211,12 +211,12 @@ $kH，kW$是卷积核的宽和高，不过这里是下标是从0开始的。也�
 
 1. 加速比率比较：
 
-![Open MPI Speedup - Thread Number](./final.assets/Open%20MPI%20Speedup%20-%20Thread%20Number.png)
+![Open MPI Speedup - Thread Number](./final.assets/Open MPI Speedup - Thread Number.png)
 
 如图所示，横轴为线程数，纵轴为加速比率（相对于串行）。
 
 2. 效率比较：
 
-![Open MPI Efficiency - Thread Number](./final.assets/Open%20MPI%20Efficiency%20-%20Thread%20Number.png)
+![Open MPI Efficiency - Thread Number](./final.assets/Open MPI Efficiency - Thread Number.png)
 
 如图所示，纵轴为*Efficiency*，可见随着线程数的增加，效率是不断降低的，所以可知算法是*Weakly Scalable*的。
