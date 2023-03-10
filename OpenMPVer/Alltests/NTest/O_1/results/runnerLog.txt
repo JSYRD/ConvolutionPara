@@ -1,0 +1,77 @@
+Start running:
+N = 7
+serial time:0.0485732
+parallel time:0.3263814
+boost ratio:0.14882343172742074
+N = 12
+serial time:0.2010656
+parallel time:0.3656656
+boost ratio:0.5498619503721434
+N = 17
+serial time:0.4455968
+parallel time:0.37854160000000003
+boost ratio:1.177140900762294
+N = 22
+serial time:0.7881722
+parallel time:0.49994500000000003
+boost ratio:1.5765178169598655
+N = 27
+serial time:1.2252196
+parallel time:0.5573564000000001
+boost ratio:2.1982695453035075
+N = 32
+serial time:1.7536539999999998
+parallel time:0.7188167999999999
+boost ratio:2.4396396967906147
+N = 37
+serial time:2.3613881999999995
+parallel time:0.7055087999999999
+boost ratio:3.347071220089671
+N = 42
+serial time:3.1225790000000004
+parallel time:0.8340270000000001
+boost ratio:3.7439783124527146
+N = 47
+serial time:3.9501353999999997
+parallel time:0.9332718
+boost ratio:4.23256697566561
+N = 52
+serial time:4.8227598
+parallel time:1.1011556
+boost ratio:4.379725989678479
+N = 57
+serial time:5.8618922
+parallel time:1.256075
+boost ratio:4.666832951853989
+N = 62
+serial time:6.9612522
+parallel time:1.4063348000000002
+boost ratio:4.949925295171533
+N = 67
+serial time:8.1828694
+parallel time:1.6008478
+boost ratio:5.111584873964908
+N = 72
+serial time:9.417041000000001
+parallel time:1.8257517999999997
+boost ratio:5.157897694527811
+N = 77
+serial time:10.886955400000002
+parallel time:2.0226844
+boost ratio:5.382429112519977
+N = 82
+serial time:12.272772799999998
+parallel time:2.1176459999999997
+boost ratio:5.795478942183916
+N = 87
+serial time:13.8831196
+parallel time:2.5336916
+boost ratio:5.479403886408275
+N = 92
+serial time:15.6118322
+parallel time:2.7853962
+boost ratio:5.604887448327817
+N = 97
+serial time:17.345845399999998
+parallel time:2.9554088
+boost ratio:5.8691864895306525

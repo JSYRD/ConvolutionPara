@@ -1,0 +1,81 @@
+Start running:
+threadnum = 1
+serial time:13.907672000000002
+parallel time:13.052980999999999
+boost ratio:1.0654786059981243
+threadnum = 2
+serial time:13.907672000000002
+parallel time:7.4055464
+boost ratio:1.8780075431030991
+threadnum = 3
+serial time:13.907672000000002
+parallel time:5.9474
+boost ratio:2.3384457073679257
+threadnum = 4
+serial time:13.907672000000002
+parallel time:5.5026358
+boost ratio:2.527456387355311
+threadnum = 5
+serial time:13.907672000000002
+parallel time:4.8790568
+boost ratio:2.850483724641206
+threadnum = 6
+serial time:13.907672000000002
+parallel time:4.4291084
+boost ratio:3.140061327015614
+threadnum = 7
+serial time:13.907672000000002
+parallel time:3.9342686000000002
+boost ratio:3.53500826049345
+threadnum = 8
+serial time:13.907672000000002
+parallel time:3.5559526
+boost ratio:3.911096002798238
+threadnum = 9
+serial time:13.907672000000002
+parallel time:3.2118042000000004
+boost ratio:4.330174298918969
+threadnum = 10
+serial time:13.907672000000002
+parallel time:2.964226
+boost ratio:4.691839286208272
+threadnum = 11
+serial time:13.907672000000002
+parallel time:2.7437214000000005
+boost ratio:5.06890823536238
+threadnum = 12
+serial time:13.907672000000002
+parallel time:2.5724202
+boost ratio:5.406454202155621
+threadnum = 13
+serial time:13.907672000000002
+parallel time:2.5065736
+boost ratio:5.548479406309873
+threadnum = 14
+serial time:13.907672000000002
+parallel time:2.3085950000000004
+boost ratio:6.0243013607843725
+threadnum = 15
+serial time:13.907672000000002
+parallel time:2.2182872
+boost ratio:6.2695542759296465
+threadnum = 16
+serial time:13.907672000000002
+parallel time:2.164492
+boost ratio:6.425374637559298
+threadnum = 17
+serial time:13.907672000000002
+parallel time:46.5788472
+boost ratio:0.29858343080676336
+threadnum = 18
+serial time:13.907672000000002
+parallel time:49.6086536
+boost ratio:0.280347701272828
+threadnum = 19
+serial time:13.907672000000002
+parallel time:52.422304200000006
+boost ratio:0.2653006618507242
+threadnum = 20
+serial time:13.907672000000002
+parallel time:55.447745399999995
+boost ratio:0.2508248423749255
