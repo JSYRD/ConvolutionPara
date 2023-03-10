@@ -1,2 +1,6 @@
 .vscode/
-log.txt
+*.txt
+*.zip
+*.py
+*.docx
+*.jpg
