@@ -1,0 +1,9 @@
+OS: Ubuntu 20.04.5 LTS on Windows 10 x86_64
+Kernel: 5.10.102.1-microsoft-standard-WSL2
+Uptime: 10 mins
+Packages: 892 (dpkg)
+Shell: zsh 5.8
+Terminal: /dev/pts/0
+CPU: AMD Ryzen 7 4800H with Radeon Graphics (16) @ 2.894GHz
+GPU: 3b43:00:00.0 Microsoft Corporation Device 008e
+Memory: 876MiB / 12265MiB

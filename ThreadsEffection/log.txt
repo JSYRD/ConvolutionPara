@@ -1,0 +1,129 @@
+serial time:20
+Thread_num = 1
+parallel time:23.512299600000002
+boost ratio:0.858276499675089
+
+Thread_num = 2
+parallel time:13.429431600000001
+boost ratio:1.5026737393710687
+
+Thread_num = 3
+parallel time:10.6128274
+boost ratio:1.9014776590072497
+
+Thread_num = 4
+parallel time:9.0502048
+boost ratio:2.2297897833207045
+
+Thread_num = 5
+parallel time:8.055130199999999
+boost ratio:2.5052424602646397
+
+Thread_num = 6
+parallel time:7.301258999999999
+boost ratio:2.7639143057382296
+
+Thread_num = 7
+parallel time:6.426482
+boost ratio:3.1401401575543195
+
+Thread_num = 8
+parallel time:5.7062818
+boost ratio:3.536462955614985
+
+Thread_num = 9
+parallel time:5.2644432000000005
+boost ratio:3.833274181778615
+
+Thread_num = 10
+parallel time:4.802722
+boost ratio:4.201795190310827
+
+Thread_num = 11
+parallel time:4.456671999999999
+boost ratio:4.528054611153793
+
+Thread_num = 12
+parallel time:4.2092042
+boost ratio:4.794268284727074
+
+Thread_num = 13
+parallel time:3.923308
+boost ratio:5.1436324142789696
+
+Thread_num = 14
+parallel time:3.5830539999999997
+boost ratio:5.632082073002528
+
+Thread_num = 15
+parallel time:3.5176966
+boost ratio:5.736723911891661
+
+Thread_num = 16
+parallel time:3.4374724
+boost ratio:5.8706083574663745
+
+Thread_num = 17
+parallel time:4.947404400000001
+boost ratio:4.078917462255561
+
+Thread_num = 18
+parallel time:4.919872600000001
+boost ratio:4.101743244327098
+
+Thread_num = 19
+parallel time:4.7985566
+boost ratio:4.205442569959474
+
+Thread_num = 20
+parallel time:4.7681544
+boost ratio:4.232256866514221
+
+Thread_num = 21
+parallel time:4.7451652
+boost ratio:4.252761147283133
+
+Thread_num = 22
+parallel time:4.7581804
+boost ratio:4.24112843640817
+
+Thread_num = 23
+parallel time:4.7622416
+boost ratio:4.237511637376818
+
+Thread_num = 24
+parallel time:4.8023128
+boost ratio:4.202153220839758
+
+Thread_num = 25
+parallel time:4.7748604
+boost ratio:4.226312920059401
+
+Thread_num = 26
+parallel time:4.7050719999999995
+boost ratio:4.289000083314346
+
+Thread_num = 27
+parallel time:4.690574
+boost ratio:4.302256866643613
+
+Thread_num = 28
+parallel time:4.634441799999999
+boost ratio:4.354365654133363
+
+Thread_num = 29
+parallel time:4.693708
+boost ratio:4.299384239496789
+
+Thread_num = 30
+parallel time:4.733164
+boost ratio:4.26354425918899
+
+Thread_num = 31
+parallel time:4.7185246
+boost ratio:4.276772065573208
+
+Thread_num = 32
+parallel time:4.8519216
+boost ratio:4.159188021504717
+

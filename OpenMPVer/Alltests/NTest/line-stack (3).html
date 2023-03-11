@@ -1,0 +1,100 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=line-stack&code=PYBwLglsB2AEC8sDeAoWtJgDYFMBcya6GOAHmAQOQAKAhgE61a5awDy4EAthAF4TQA5pSIBfADREwwYFkggCqYhnoRBgnPSq1SEAM4j0Eorg3QAJoqLpztMLQIBtSm1WCBlcbBcB9AIye3mw-AEyUALpikuiCqpaEyrgAZhTeAMwApJ7WsG4AFqmUACxZ0cQARsBg0lxUmdnKAMYw9gIAMrTlOFgEYPQArjhRUjJYlaRWykk4dv30-AnKsHq0AG44AIJ6AJJctBqKojlHRmWkG7p6k8RgAJ4gC5SNdjiCwPS3DRXA_RYMtwBxWgKWBJJh6HBlGx2BywRwAdi8fhCSMRsBCKPRaLSmLSaKKmKKaIArJjiWiAGyYilo-GY-FogAcmMZaIAnJi2fDIqciLcLvprug7g8qKsmINDLBjOgIaocFc4TklEtoLQuI9XGoPFCbvdHlgBDgvspbPYnAAGAB0OK58ItxLZTudzrR1rxbMdxIpFt9fr9aS87rZfjZFsZ_sjFsDsGtxIt9r8fijfr8Qat5IpRRxRRTFrTsYzjNzbJx6YZjq5ITzmOtYfJONDLpdSKtIWJjPJCebzsZrdDjM9dNbaRpbMZaSKrfhaUZFKTefz0_HfnhFLSPadffRVotFLnIWZXhCNtZRL3x9PITxWa8aStyPhbNzU9g9_DH_jNbvbYnISzi5FDyxAysQKrKGqGpUMEAS6sK-pUIa0DGnBsBmrCjjuv-s5-K-7oUt6BEUumeKdkUfg-nmMbWkUzpFF-VHpsSDbermKYFta8J-IyjIUU-m5suWDrxqyAmCYWE65iE9p5hxVqljiXHbn4D75n4zHEbAKntj68LEq2ubrpOEYppiKmUcW8LKVazLksSq4CWiJ4Whi-5FK-J5Jmu9FiU5GZpKOIaaSeVnEhuVKXp6xK5jxkTHLq4HEJBmqhCaeqit4SEoTk0LmnC7rIr6PmOSROl7iZKbUTaBJJkUmnuvaOJUou-mFgS2alvVVpEup9nbtaNIYjx_VFqStH8Zu6YUhyh4TZNhZPmkFpFEeEnzqyhXsemXKshiZkPsm2ZrgZE6jgWKn2aWFriRdzFztZdLlTGzmjp2xaMTu4YhsxIRxcoJywJEogANxAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  title: {
+    text: 'Parallel Optimizing'
+  },
+  tooltip: {
+    trigger: 'axis'
+  },
+  legend: {
+    data: ['Origin', 'O_1', 'O_2']
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  toolbox: {
+    feature: {
+      saveAsImage: {}
+    }
+  },
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: [7, 12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 62, 67, 72, 77, 82, 87, 92, 97]
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      name: 'Origin',
+      type: 'line',
+      data: [0.32977059999999997, 0.37959560000000003, 0.39190800000000003, 0.5070110000000001, 0.5764324000000001, 0.5840932, 0.7759972000000002, 0.9057321999999999, 1.2585707999999998, 1.1989572, 1.3679834, 1.7386110000000001, 1.7981763999999998, 2.0686282, 2.3874706, 2.3823764, 3.1279404, 3.0808050000000002, 3.2832640000000004]
+    },
+    {
+      name: 'O_1',
+      type: 'line',
+      data: [0.3263814, 0.3656656, 0.37854160000000003, 0.49994500000000003, 0.5573564000000001, 0.7188167999999999, 0.7055087999999999, 0.8340270000000001, 0.9332718, 1.1011556, 1.256075, 1.4063348000000002, 1.6008478, 1.8257517999999997, 2.0226844, 2.1176459999999997, 2.5336916, 2.7853962, 2.9554088]
+
+    },
+    {
+      name: 'O_2',
+      type: 'line',
+      data: [0.31200459999999997, 0.32560680000000003, 0.3421146, 0.37032620000000005, 0.4243936, 0.4715518, 0.6722888, 0.5852497999999999, 0.6922879999999999, 0.7930482, 0.8618712000000001, 0.9787222, 1.1104376, 1.483361, 1.519309, 1.555868, 1.720683, 2.0368584000000003, 2.0891552]
+
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
